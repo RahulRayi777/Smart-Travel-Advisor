@@ -1,0 +1,26 @@
+# Ignore virtual environments
+.venv/
+venv/
+
+# Ignore notebook checkpoints and output junk
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+
+# Ignore notebooks (not needed inside container)
+*.ipynb
+notebooks/
+
+# Ignore raw datasets
+data/
+*.csv
+*.xlsx
+
+# Ignore reports and figures
+*.pdf
+*.png
+*.jpg
+
+# Ignore source model files if you're not using them directly
+train_model.py
+report.pdf

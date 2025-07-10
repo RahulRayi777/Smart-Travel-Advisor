@@ -15,13 +15,7 @@ import os
 import os
 from dotenv import load_dotenv
 
-load_dotenv()
-
-openai_api_key = os.getenv("OPENAI_API_KEY")
-
-# Optional: check if key is loaded
-if not openai_api_key:
-    st.warning("⚠️ OpenAI API key not found in environment!")
+ 
 
 
 # ============================
@@ -44,7 +38,7 @@ encoders = {
     "Total_Stops": joblib.load(r"C:\Users\naray\OneDrive\Pictures\Desktop\01. My Learning\new\smart-travel-advisor\models\encoders\Total_Stops_encoder.pkl")
 }
 
-llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0,api_key=openai_api_key)   
+llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)   
 
 
 # ============================
